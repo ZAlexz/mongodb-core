@@ -407,7 +407,7 @@ ObjectID.prototype.getTimestampDate = function getTimestampDate() {
     ts.setTime(this.id.readUIntBE(0, 4) * 1000);
     return ts;
 }
-ObjectID.createPk = function createPk () {  /// ?Q if a PrivateKey factory with unique factors is warranted?!
+ObjectID.createPk = function createPk () {  ///?override if a PrivateKey factory w/ unique factors is warranted?!
   return new ObjectID();
 }
 ObjectID.prototype.toJSON = function toJSON() {
